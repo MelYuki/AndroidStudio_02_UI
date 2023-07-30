@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Demo UI"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/btn_margin"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Btn 01"/>
+
+        <Space
+            android:layout_width="@dimen/btn_margin"
+            android:layout_height="0dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Btn 02" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grid"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:columnCount="3">
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="Test" />
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="Test" />
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="Test" />
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="Test" />
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="Test" />
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="Test" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/layout_margin">
+
+        <Button
+            android:id="@+id/btn_main_red"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="@string/btn_heart"
+            android:backgroundTint="@color/red"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/btn_main_mel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Me"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/red"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choix de couleur ok?"
+
+            android:layout_above="@id/btn_main_mel"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Magnifique Boutons: "
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/btn_margin"
+
+            android:layout_toStartOf="@id/btn_main_red"
+            android:layout_alignBottom="@id/btn_main_red"
+            android:layout_alignTop="@id/btn_main_red" />
+
+    </RelativeLayout>
+
+</LinearLayout>

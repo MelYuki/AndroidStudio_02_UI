@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Demo02_UI</string>
+    <string name="btn_heart"><![CDATA[<3]]></string>
+</resources>
